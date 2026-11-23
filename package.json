@@ -1,0 +1,38 @@
+{
+  "name": "notion-cli",
+  "version": "1.0.0",
+  "description": "Command-line tool to interact with Notion API - search pages, create notes, and export content",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "notion": "./bin/notion.js"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "lint": "eslint src test"
+  },
+  "keywords": [
+    "notion",
+    "cli",
+    "productivity",
+    "note-taking",
+    "api"
+  ],
+  "author": "Ruturaj Sonkamble",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajj28/notion-cli.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
